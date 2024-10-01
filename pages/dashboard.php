@@ -4,7 +4,7 @@ session_start();
 // Check if the user is logged in, if
 // not then redirect them to the login page
 if (!isset($_SESSION['email'])) {
-    header("Location: login.php");
+    header("Location:index.php");
     exit();
 }
 ?>
@@ -48,7 +48,7 @@ if (!isset($_SESSION['email'])) {
         <hr>
         <h2 class="p-4 mt-5">Welcome To Dashboard</h2>
         <hr>
-        <a href="../quiz/quiz.php">Start Quiz</a>
+        <a href="./quiz/quiz.php">Start Quiz</a>
     </div>
 </body>
 

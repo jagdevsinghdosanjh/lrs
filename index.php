@@ -1,5 +1,5 @@
 <?php
-include 'db_connection.php';
+include '../database/db_connection.php';
 $message = "";
 $toastClass = "";
 
@@ -97,7 +97,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="col mb-2 mt-4">
                 <p class="text-center" 
                   style="font-weight: 600; color: navy;"
-                  ><a href="./register.php"
+                  ><a href="./pages/register.php"
                         style="text-decoration: none;">Create Account</a> OR <a href="./resetpassword.php"
                         style="text-decoration: none;">Forgot Password</a></p>
             </div>

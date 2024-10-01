@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latitude and Longitude to Cartesian Coordinates</title>
+</head>
+<body>
+    <h1>Convert Latitude and Longitude to Cartesian Coordinates</h1>
+    <p id="coordinates"></p>
+
+    <script>
+        // Function to convert degrees to radians
+        function degreesToRadians(degrees) {
+            return degrees * (Math.PI / 180);
+        }
+
+        // Function to convert latitude and longitude to Cartesian coordinates
+        function latLonToCartesian(lat, lon, radius = 6371) {
+            // Convert latitude and longitude from degrees to radians
+            const latRad = degreesToRadians(lat);
+            const lonRad = degreesToRadians(lon);
+
+            // Calculate Cartesian coordinates
+            const x = radius * Math.cos(latRad) * Math.cos(lonRad);
+            const y = radius * Math.cos(latRad) * Math.sin(lonRad);
+            const z = radius * Math.sin(latRad);
+
+            return { x, y, z };
+        }
+
+        // Example usage
+        const latitude = 31.664249;
+        const longitude = 74.872627;
+        const radius = 6371; // Earth's radius in kilometers
+
+        const cartesianCoords = latLonToCartesian(latitude, longitude, radius);
+        document.getElementById('coordinates').innerText = 
+            `Cartesian Coordinates: x=${cartesianCoords.x.toFixed(2)}, y=${cartesianCoords.y.toFixed(2)}, z=${cartesianCoords.z.toFixed(2)}`;
+    </script>
+</body>
+</html>
