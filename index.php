@@ -1,5 +1,5 @@
 <?php
-include '../database/db_connection.php';
+include './database/db_connection.php';
 $message = "";
 $toastClass = "";
 
@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Start the session and redirect to the dashboard or home page
             session_start();
             $_SESSION['email'] = $email;
-            header("Location: dashboard.php");
+            header("Location: ./pages/dashboard.php");
             exit();
         } else {
             $message = "Incorrect password";
