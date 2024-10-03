@@ -90,7 +90,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="col mb-2 mt-4">
                 <p class="text-center" style="font-weight: 600; color: navy;">
                     <a href="./pages/register.php" style="text-decoration: none;">Create Account</a> OR 
-                    <a href="./index.php" style="text-decoration: none;">Login</a></p>
+                    <a href="./lrs" style="text-decoration: none;">Login</a></p>
             </div>
         </form>
     </div>

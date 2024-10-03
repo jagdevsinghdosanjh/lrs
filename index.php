@@ -54,6 +54,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 
 <body class="bg-light">
+    <h1 align="center">Register for Online Quiz</h1>
     <div class="container p-5 d-flex flex-column align-items-center">
         <?php if ($message): ?>
             <div class="toast align-items-center text-white 
@@ -74,7 +75,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;">
             <div class="row">
                 <i class="fa fa-user-circle-o fa-3x mt-1 mb-2" style="text-align: center; color: green;"></i>
-                <h5 class="text-center p-4" style="font-weight: 700;">Login Into Your Account</h5>
+                <h5 class="text-center p-4" style="font-weight: 700;">Login If Already Registered</h5>
             </div>
             <div class="col-mb-3">
                 <label for="email"><i class="fa fa-envelope"></i> Email</label>

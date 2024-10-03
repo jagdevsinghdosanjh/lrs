@@ -91,7 +91,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
             <div class="mb-2 mt-4">
                 <p class="text-center" style="font-weight: 600; 
-                color: navy;">I have an Account <a href="./index.php" style="text-decoration: none;">Login</a></p>
+                color: navy;">I have an Account <a href="./" style="text-decoration: none;">Login</a></p>
             </div>
         </form>
     </div>
