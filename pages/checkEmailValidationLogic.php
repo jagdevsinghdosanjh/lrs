@@ -1,6 +1,6 @@
 <?php
 
-include '../database/db_connection.php';
+include 'da_connection.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
