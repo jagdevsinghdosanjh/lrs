@@ -1,5 +1,6 @@
 <?php
-include 'db_connection.php';
+include(__DIR__ . '/../database/db_connection.php');
+//include './database/db_connection.php';
 $message = "";
 $toastClass = "";
 
@@ -86,12 +87,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
             <div class="mb-2 mt-3">
                 <button type="submit" class="btn btn-success
-                bg-success" style="font-weight: 600;">Create
-                    Account</button>
+                bg-success" style="font-weight: 600;">Create Account</button>
             </div>
             <div class="mb-2 mt-4">
                 <p class="text-center" style="font-weight: 600; 
-                color: navy;">I have an Account <a href="./" style="text-decoration: none;">Login</a></p>
+                color: navy;">I have an Account <a href="/lrs" style="text-decoration: none;">Login</a></p>
             </div>
         </form>
     </div>

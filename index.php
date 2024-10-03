@@ -1,6 +1,6 @@
 <?php
-
-include 'db_connection.php';
+include './database/db_connection.php';
+//include(__DIR__ . '/../database/db_connection.php');
 $message = "";
 $toastClass = "";
 
@@ -55,7 +55,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 
 <body class="bg-light">
-    <h1 align="center">Register for Online Quiz</h1>
+    <h3 align="center">Register for Online Quiz</h3>
     <div class="container p-5 d-flex flex-column align-items-center">
         <?php if ($message): ?>
             <div class="toast align-items-center text-white 
@@ -91,8 +91,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
             <div class="col mb-2 mt-4">
                 <p class="text-center" style="font-weight: 600; color: navy;">
-                    <a href="./pages/register.php" style="text-decoration: none;">Create Account</a> OR 
-                    <a href="./pages/resetpassword.php" style="text-decoration: none;">Forgot Password</a>
+                    <a href='./pages/register.php' style="text-decoration: none;">Create Account</a> OR 
+                    <a href='./pages/resetpassword.php' style="text-decoration: none;">Forgot Password</a>
                 </p>
             </div>
         </form>
