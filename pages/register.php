@@ -83,7 +83,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
             <div class="mb-2 mt-2">
                 <label for="password"><i class="fa fa-lock"></i> Password</label>
-                <input type="text" name="password" id="password" class="form-control" required>
+                <input type="password" name="password" id="password" class="form-control" required>
             </div>
             <div class="mb-2 mt-3">
                 <button type="submit" class="btn btn-success

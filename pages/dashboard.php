@@ -46,7 +46,12 @@ if (!isset($_SESSION['email'])) {
 
     <div>
         <hr>
-        <h2 class="p-4 mt-5">Welcome To Dashboard</h2>
+        <h2 class="p-4 mt-5">Welcome, <?php echo $_SESSION['email']; ?>!</h2>
+    Successfully Logged in @<?php
+// Return current date from the remote server
+$timestamp = time();
+echo(date("F d, Y h:i:s", $timestamp));
+?>To Dashboard
         <hr>
         <a href="./quiz/quiz.php">Start Quiz</a>
     </div>

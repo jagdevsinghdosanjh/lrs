@@ -10,6 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Prepare and execute
     $stmt = $conn->prepare("SELECT password FROM udata WHERE email = ?");
+    $username=$conn->prepare(query:"SELECT username FROM udata WHERE email=?");
     $stmt->bind_param("s", $email);
     $stmt->execute();
     $stmt->store_result();
@@ -84,7 +85,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
             <div class="col mb-3 mt-3">
                 <label for="password"><i class="fa fa-lock"></i> Password</label>
-                <input type="text" name="password" id="password" class="form-control" required>
+                <input type="password" name="password" id="password" class="form-control" required>
             </div>
             <div class="col mb-3 mt-3">
                 <button type="submit" class="btn btn-success bg-success" style="font-weight: 600;">Login</button>
