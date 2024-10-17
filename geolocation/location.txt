@@ -4,3 +4,4 @@ Latitude: 31.664350422322, Longitude: 74.872551765033
 Latitude: 31.66412610564, Longitude: 74.873331306368
 Latitude: 31.664289, Longitude: 74.872502
 Latitude: 30.9323, Longitude: 75.9338
+Latitude: 31.66436, Longitude: 74.872546
